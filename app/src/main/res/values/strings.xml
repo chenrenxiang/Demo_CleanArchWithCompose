@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Clean Architecture Demo</string>
+    <string name="app_start">アプリを始める</string>
+    <string name="app_start_slogan">スローガン文字</string>
+    <string name="cancel">キャンセル</string>
+    <string name="add">追加する</string>
+    <string name="membership_register">会員登録</string>
+    <string name="home">HOME</string>
+    <string name="empty_string">""</string>
+    <string name="delete">削除</string>
+    <string name="next">次へ</string>
+    <string name="nice2meet_you">はじめまして</string>
+    <string name="go2agreement">利用規約に進む</string>
+    <string name="agreement">利用規約</string>
+    <string name="agree_with_agreement">上記規約を同意する</string>
+    <string name="start_2_use">利用を始める</string>
+    <string name="start">はじめる</string>
+    <string name="login">ログイン</string>
+    <string name="email_address">メールアドレス</string>
+    <string name="password">パスワード</string>
+    <string name="new_register">新規会員登録</string>
+    <string name="user_register">利用者登録</string>
+    <string name="confirm">確認</string>
+    <string name="name">名前</string>
+    <string name="name_kana">かな（名前）</string>
+    <string name="password_repeat">パスワードの再入力</string>
+    <string name="do_register">登録する</string>
+    <string name="verify">認証</string>
+    <string name="do_verify">認証する</string>
+    <string name="code_verify">認証コード入力</string>
+    <string name="tip_input_code">メールに届いた認証コードを入力してください</string>
+    <string name="send_code">コード送信</string>
+    <string name="invalid_code">入力されたコードは無効です。</string>
+    <string name="back">戻る</string>
+    <string name="start_app">アプリをはじめる</string>
+    <string name="disagree">同意しない</string>
+    <string name="agree_start">同意して開始</string>
+    <string name="agree_next">同意して次へ</string>
+
+    <string name="agreement_hint">利用規約に同意いただけない場合、アプリをご利用いただけません。</string>
+    <string name="start_agreement_text">本アプリご利用の前に以下の利用規約をご確認いただき、同意をお願いします。</string>
+    <string name="network_disconnect">ネットワークに接続できません。通信環境をご確認ください。</string>
+</resources>
