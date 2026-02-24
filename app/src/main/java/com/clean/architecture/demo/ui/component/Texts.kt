@@ -1,4 +1,4 @@
-package com.clean.architecture.demo.ui.widgets
+package com.clean.architecture.demo.ui.component
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box

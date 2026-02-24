@@ -12,10 +12,10 @@ import com.clean.architecture.demo.data.api.mapper.toLoginResult
 import com.clean.architecture.demo.data.api.mapper.toReqRegister
 import com.clean.architecture.demo.data.api.mapper.toVerifyResult
 import com.clean.architecture.demo.data.datastore.AppDataStore
-import com.clean.architecture.demo.domain.interfaces.AccountRepository
-import com.clean.architecture.demo.domain.interfaces.AuthRepository
-import com.clean.architecture.demo.domain.interfaces.SettingsRepository
-import com.clean.architecture.demo.domain.interfaces.TokenRepository
+import com.clean.architecture.demo.domain.repository.AccountRepository
+import com.clean.architecture.demo.domain.repository.AuthRepository
+import com.clean.architecture.demo.domain.repository.SettingsRepository
+import com.clean.architecture.demo.domain.repository.TokenRepository
 import com.clean.architecture.demo.domain.model.AccountStateEntity
 import com.clean.architecture.demo.domain.model.ApiResult
 import com.clean.architecture.demo.domain.model.LoginResult

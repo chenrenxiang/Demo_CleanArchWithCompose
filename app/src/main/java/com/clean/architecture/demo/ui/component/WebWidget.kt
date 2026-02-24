@@ -1,4 +1,4 @@
-package com.clean.architecture.demo.ui.widgets
+package com.clean.architecture.demo.ui.component
 
 import android.annotation.SuppressLint
 import android.webkit.WebView

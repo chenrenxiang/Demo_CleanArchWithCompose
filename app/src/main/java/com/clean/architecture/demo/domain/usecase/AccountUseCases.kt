@@ -1,9 +1,9 @@
 package com.clean.architecture.demo.domain.usecase
 
-import com.clean.architecture.demo.domain.interfaces.AccountRepository
-import com.clean.architecture.demo.domain.interfaces.AuthRepository
-import com.clean.architecture.demo.domain.interfaces.SettingsRepository
-import com.clean.architecture.demo.domain.interfaces.TokenRepository
+import com.clean.architecture.demo.domain.repository.AccountRepository
+import com.clean.architecture.demo.domain.repository.AuthRepository
+import com.clean.architecture.demo.domain.repository.SettingsRepository
+import com.clean.architecture.demo.domain.repository.TokenRepository
 import com.clean.architecture.demo.domain.model.ApiResult
 import com.clean.architecture.demo.domain.model.LoginResult
 import com.clean.architecture.demo.domain.model.RegisterEntity

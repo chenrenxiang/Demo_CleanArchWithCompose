@@ -1,4 +1,4 @@
-package com.clean.architecture.demo.ui.widgets
+package com.clean.architecture.demo.ui.component
 
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height

@@ -1,7 +1,7 @@
 package com.clean.architecture.demo.data.repository
 
 import com.clean.architecture.demo.data.api.interfaces.IHomeApis
-import com.clean.architecture.demo.domain.interfaces.HomeRepository
+import com.clean.architecture.demo.domain.repository.HomeRepository
 import javax.inject.Inject
 import javax.inject.Singleton
 

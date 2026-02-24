@@ -6,7 +6,7 @@ English | [日本語](README_ja.md)
 このアプリは以下の技術検証を目的として作成しました。
 - Clean Architecture
 - Jetpack Compose
-- Navigation3
+- Jetpack Navigation3
 - Hilt (DI)
 - StateFlow/SharedFlow
 - Retrofit/Okhttp
@@ -17,12 +17,12 @@ UI / Domain / Data の3層構成
 
 ### UI層
 - theme：アプリケーションのデザインシステムを定義する。アプリ全体で使用される色（color）、文字スタイル（typography）などを含む。
-- widgets：特定の機能画面に依存しない汎用的なUIコンポーネントを格納する。
+- component：特定の機能画面に依存しない汎用的なUIコンポーネントを格納する。
 - feature：各業務画面（UI描画および対応するViewModelを含む）
 
 ### Domain層
 アーキテクチャの中心であり、他のどの層にも依存しない。 
-- interfaces : データアクセスの抽象（インターフェース）を定義。
+- repository : データアクセスの抽象（インターフェース）を定義。
 - model : 純粋なビジネスドメインモデルを定義。
 - usecase : 具体的なビジネスロジックや一連の処理フローをカプセル化。
 
@@ -36,4 +36,4 @@ UI / Domain / Data の3層構成
 `UI (Page)` → `ViewModel` → `UseCase` → `Repository (Interface)` → `RepositoryImp` → `DataSource (API / DataStore)`
 
 依存関係の方向: 
-`feature` → `domain` ← `data`
+`UI` → `domain` ← `data`

@@ -44,14 +44,14 @@ import com.clean.architecture.demo.common.clearFocusWhenTap
 import com.clean.architecture.demo.common.collectWithLifecycle
 import com.clean.architecture.demo.common.toastLong
 import com.clean.architecture.demo.ui.theme.MyDemoTheme
-import com.clean.architecture.demo.ui.widgets.AppAlertDialog
-import com.clean.architecture.demo.ui.widgets.BackButton
-import com.clean.architecture.demo.ui.widgets.CodeInputWidget
-import com.clean.architecture.demo.ui.widgets.CardDialog
-import com.clean.architecture.demo.ui.widgets.SpacerHeight
-import com.clean.architecture.demo.ui.widgets.SpacerWidth
-import com.clean.architecture.demo.ui.widgets.SystemVerifyDialog
-import com.clean.architecture.demo.ui.widgets.cardPadding
+import com.clean.architecture.demo.ui.component.AppAlertDialog
+import com.clean.architecture.demo.ui.component.BackButton
+import com.clean.architecture.demo.ui.component.CodeInputWidget
+import com.clean.architecture.demo.ui.component.CardDialog
+import com.clean.architecture.demo.ui.component.SpacerHeight
+import com.clean.architecture.demo.ui.component.SpacerWidth
+import com.clean.architecture.demo.ui.component.SystemVerifyDialog
+import com.clean.architecture.demo.ui.component.cardPadding
 
 @Composable
 fun VerifyPage(

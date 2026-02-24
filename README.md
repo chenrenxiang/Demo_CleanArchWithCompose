@@ -3,10 +3,11 @@ English | [日本語](README_ja.md)
 # Android Clean Architecture Demo App
 
 ## Overview
-This application was created for the purpose of validating and demonstrating the following technologies:
+This application serves as a demonstration and validation of modern Android development practices, 
+utilizing the following technologies:
 - Clean Architecture
 - Jetpack Compose
-- Navigation3
+- Jetpack Navigation3
 - Hilt (Dependency Injection)
 - StateFlow / SharedFlow
 - Retrofit / OkHttp
@@ -23,15 +24,15 @@ The UI layer is responsible for rendering screens and handling user interactions
   - Colors, 
   - Typography, 
   - Global styling configurations
-- widgets : Reusable UI components that are not tied to specific feature screens.
+- component : Reusable UI components that are not tied to specific feature screens.
 - feature : Contains business-specific screens, including:
   - UI rendering logic (Compose screens)
   - Corresponding ViewModels
 
 ### Domain Layer
 The core of the architecture. This layer does not depend on any other layer.
-- interfaces : Defines abstractions (interfaces) for data access.
-- model : Contains pure business domain models.
+- repository : Defines the abstraction (interfaces) for the data layer.
+- model : Contains the core business models (Entities).
 - usecase : Encapsulates business logic and specific processing flows.
 
 ### Data Layer
@@ -54,8 +55,10 @@ UI (Page)
 ```
 
 Dependency Direction
-`feature → domain ← data`
+`UI → domain ← data`
 
 The UI layer depends on Domain
+
 The Data layer depends on Domain
+
 The Domain layer is independent

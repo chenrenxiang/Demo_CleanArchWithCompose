@@ -1,6 +1,6 @@
 package com.clean.architecture.demo.domain.usecase
 
-import com.clean.architecture.demo.domain.interfaces.SettingsRepository
+import com.clean.architecture.demo.domain.repository.SettingsRepository
 import javax.inject.Inject
 
 

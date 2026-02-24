@@ -1,4 +1,4 @@
-package com.clean.architecture.demo.domain.interfaces
+package com.clean.architecture.demo.domain.repository
 
 import com.clean.architecture.demo.domain.model.AccountStateEntity
 import com.clean.architecture.demo.domain.model.ApiResult

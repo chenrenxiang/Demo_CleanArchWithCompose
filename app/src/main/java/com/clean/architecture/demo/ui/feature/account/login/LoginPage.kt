@@ -32,13 +32,13 @@ import com.clean.architecture.demo.app.PageNavigator
 import com.clean.architecture.demo.common.State
 import com.clean.architecture.demo.common.clearFocusWhenTap
 import com.clean.architecture.demo.common.toastLong
-import com.clean.architecture.demo.ui.widgets.AppAlertDialog
-import com.clean.architecture.demo.ui.widgets.DelayLoadingDialog
-import com.clean.architecture.demo.ui.widgets.CardDialog
-import com.clean.architecture.demo.ui.widgets.AppTextField
-import com.clean.architecture.demo.ui.widgets.SpacerHeight
-import com.clean.architecture.demo.ui.widgets.SystemVerifyDialog
-import com.clean.architecture.demo.ui.widgets.cardPadding
+import com.clean.architecture.demo.ui.component.AppAlertDialog
+import com.clean.architecture.demo.ui.component.DelayLoadingDialog
+import com.clean.architecture.demo.ui.component.CardDialog
+import com.clean.architecture.demo.ui.component.AppTextField
+import com.clean.architecture.demo.ui.component.SpacerHeight
+import com.clean.architecture.demo.ui.component.SystemVerifyDialog
+import com.clean.architecture.demo.ui.component.cardPadding
 
 @Composable
 fun LoginPage(
