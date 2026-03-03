@@ -3,6 +3,7 @@ package com.clean.architecture.demo.data.repository
 import com.clean.architecture.demo.domain.repository.AccountRepository
 import com.clean.architecture.demo.domain.repository.AuthRepository
 import com.clean.architecture.demo.domain.repository.HomeRepository
+import com.clean.architecture.demo.domain.repository.NetworkRepository
 import com.clean.architecture.demo.domain.repository.SettingsRepository
 import com.clean.architecture.demo.domain.repository.TokenRepository
 import dagger.Binds
@@ -41,4 +42,9 @@ abstract class RepositoryModule {
     abstract fun bindHomeRepository(
         homeRepositoryImp: HomeRepositoryImp
     ): HomeRepository
+
+    @Binds @Singleton
+    abstract fun bindNetworkRepository(
+        networkRepositoryImp: NetworkRepositoryImp
+    ): NetworkRepository
 }

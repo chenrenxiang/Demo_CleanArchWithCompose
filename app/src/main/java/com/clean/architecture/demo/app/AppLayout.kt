@@ -35,7 +35,7 @@ import com.clean.architecture.demo.R
 import com.clean.architecture.demo.common.UiEvent
 import com.clean.architecture.demo.common.collectWithLifecycle
 import com.clean.architecture.demo.common.toastLong
-import com.clean.architecture.demo.data.api.network.NetworkStatus
+import com.clean.architecture.demo.domain.repository.NetworkStatus
 import com.clean.architecture.demo.ui.theme.MyDemoTheme
 
 

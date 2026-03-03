@@ -3,8 +3,8 @@ package com.clean.architecture.demo.app
 import androidx.lifecycle.viewModelScope
 import com.clean.architecture.demo.common.StateEventViewModel
 import com.clean.architecture.demo.common.UiEvent
-import com.clean.architecture.demo.data.api.network.NetworkMonitor
-import com.clean.architecture.demo.data.api.network.NetworkStatus
+import com.clean.architecture.demo.domain.repository.NetworkRepository
+import com.clean.architecture.demo.domain.repository.NetworkStatus
 import com.clean.architecture.demo.domain.usecase.AccountActionUseCase
 import com.clean.architecture.demo.domain.usecase.AuthUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -20,7 +20,7 @@ data class AppUiState(
 
 @HiltViewModel
 class AppViewModel @Inject constructor(
-    private val networkMonitor: NetworkMonitor,
+    private val networkRepository: NetworkRepository,
     private val authUseCase: AuthUseCase,
     private val accountActionUseCase: AccountActionUseCase,
 ) : StateEventViewModel<AppUiState>(AppUiState()) {
@@ -30,7 +30,7 @@ class AppViewModel @Inject constructor(
     }
 
     private fun observeNetworkStatus() {
-        networkMonitor.networkStatus.onEach { status ->
+        networkRepository.networkStatus.onEach { status ->
             updateState { it.copy(networkStatus = status) }
         }.launchIn(viewModelScope)
     }
