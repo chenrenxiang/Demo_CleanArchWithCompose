@@ -1,6 +1,4 @@
 package com.clean.architecture.demo.app
-
-
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -37,7 +35,6 @@ import com.clean.architecture.demo.common.collectWithLifecycle
 import com.clean.architecture.demo.common.toastLong
 import com.clean.architecture.demo.domain.repository.NetworkStatus
 import com.clean.architecture.demo.ui.theme.MyDemoTheme
-
 
 @Composable
 fun AppComposableLayout() {

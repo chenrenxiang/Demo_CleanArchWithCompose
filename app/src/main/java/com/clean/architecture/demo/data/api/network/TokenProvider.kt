@@ -1,11 +1,11 @@
 package com.clean.architecture.demo.data.api.network
 
+import com.clean.architecture.demo.app.AppCoroutineScope
+import com.clean.architecture.demo.data.datastore.AppDataStore
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import com.clean.architecture.demo.app.ApplicationScope
-import com.clean.architecture.demo.data.datastore.AppDataStore
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -20,7 +20,7 @@ interface TokenProvider {
 @Singleton
 class DataStoreTokenProvider @Inject constructor(
     private val appDataStore: AppDataStore,
-    @param:ApplicationScope private val coroutineScope: CoroutineScope
+    @param:AppCoroutineScope private val coroutineScope: CoroutineScope
 ) : TokenProvider {
     @Volatile private var verifiedToken: String? = null
     @Volatile private var unverifiedToken: String? = null

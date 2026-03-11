@@ -25,26 +25,22 @@ object NetworkModule {
     @Singleton
     fun provideBaseUrl(): String = if (BuildConfig.DEBUG) BASE_URL_TEST else BASE_URL
 
-    @Provides
-    @Singleton
-    fun provideJson(): Json = Json {
+    private fun provideJson(): Json = Json {
         ignoreUnknownKeys = true
         coerceInputValues = true
         encodeDefaults = true
     }
 
-    @Provides
-    @Singleton
-    fun provideLoggingInterceptor(): HttpLoggingInterceptor = httpLoggingInterceptor()
+
+    private fun provideLoggingInterceptor(): HttpLoggingInterceptor = httpLoggingInterceptor()
 
 
     @Provides
     @Singleton
     fun provideOkHttpClient(
         tokenInterceptor: TokenInterceptor,
-        loggingInterceptor: HttpLoggingInterceptor,
     ): OkHttpClient = OkHttpClient.Builder()
-        .addInterceptor(loggingInterceptor)
+        .addInterceptor(provideLoggingInterceptor())
         .addInterceptor(tokenInterceptor)
         .connectTimeout(15, TimeUnit.SECONDS)
         .readTimeout(30, TimeUnit.SECONDS)
@@ -55,11 +51,10 @@ object NetworkModule {
     @Singleton
     fun provideRetrofit(
         baseUrl: String,
-        okHttpClient: OkHttpClient,
-        json: Json
+        okHttpClient: OkHttpClient
     ): Retrofit = Retrofit.Builder()
         .baseUrl(baseUrl)
         .client(okHttpClient)
-        .addConverterFactory(json.asConverterFactory("application/json".toMediaType()))
+        .addConverterFactory(provideJson().asConverterFactory("application/json".toMediaType()))
         .build()
 }
